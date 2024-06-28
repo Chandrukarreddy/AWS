@@ -2,3 +2,8 @@ $ wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.rpm
 $ sudo yum install ./mount-s3.rpm
 $ mkdir revanth
 $  mount-s3 s3-bucket revanth
+
+
+aws s3 ls                                ------ to list busket
+aws s3 mb s3://name                      ------ to create bucket
+aws s3 cp filename s3://bucketname       ------ to cp file from server to bucket
