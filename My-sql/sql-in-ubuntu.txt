@@ -1,0 +1,29 @@
+                                   SQL Installation on ubuntu
+                                   --------------------------
+
+apt update -y
+
+apt install mysql-server
+
+systemctl start mysql.service
+
+mysql -h writer-host -u admin -p
+                                   MY-SQl commands
+                                  ----------------
+
+show databases
+
+create database remu;
+
+use remu;
+
+CREATE TABLE Students (
+      Student_id int NOT NULL,
+      LASTNAME varchar(255) NOT NULL,
+      FIRSTNAME varchar(255),
+      AGE int,
+      PRIMARY KEY (Student_id));
+
+
+INSERT INTO Students (Student_id,LASTNAME,FIRSTNAME,AGE)
+VALUES ('1040','anitha','reddy',22);
