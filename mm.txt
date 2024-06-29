@@ -1,8 +1,0 @@
-https://www.youtube.com/watch?v=J0-y8SG5oS4
-
-https://www.youtube.com/watch?v=fiGA9AGO5Cg
-
-https://www.youtube.com/watch?v=tcnCgvoZi9c -----maven intro
-
- sudo apt-get install mailutils ----------for mailx
-

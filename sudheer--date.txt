@@ -1,2 +1,0 @@
-april 10 ----Maven
-april 1 ---ansible
