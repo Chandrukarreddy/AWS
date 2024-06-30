@@ -1,0 +1,95 @@
+        
+      BASIC COMMANDS DOCKER
+
+> docker--version                            : Display Docker version.
+> docker info                                : Display system -wide information.
+> dockerrun image                            : Run a docker container froman image.
+> docker ps                                  : list running docker containers.
+> docker ps-a                                : list all docker containers.
+> docker stop container_id                   : stop a running container.
+> docker rm containe_id                      : Remove a docekr container.
+> docker images                              : It will show you a list of all images currently downloaded locally (list docker images).
+> docker rmi images_id                       : To remove a Docker image.
+> docker run -d image                        : Run a docker container indetached mode.
+> docker run -p host_port                    : To run a Docker container and map a host port to a container port, you need to specify both ports in the docker run.
+> docker run -v host_volume                  : To mount a volume, you need to specify both the host and the container path.
+> docker run -e VAR=VALUE image              : Set environment Variable in container.
+> docker inspect container_id/image_id       : Return low levelinformation on docker objects
+> docker build -t tag                        : Build a docker image with a tag from a dockerfilein the current directory.
+> docker tag image new_tag                   : Tag an image with a new tag         
+          
+         DOCKERFILE COMMANDS
+
+> FROM image                     : Set the base image.
+> RUN command                    : Run a command.
+> CMD command                    : Set a default command that will run when the container starts.
+> ENV VAR=VALUE                  : Set environment variables.
+> ADD source destination         : Copy files from source to the container's filesystem at the destination
+> COPY source destination        : Copy new files or directories from source and add them to the filesystem of the container.  
+> ENTRYPOINT command             : Allow you to configure a container that will run as an executable.
+> LABEL                          : Adds metadata to an image.
+> EXPOSE                         : Informs Docker that the container listens on the specified network ports at runtime.
+> ENTRYPOINT                     : Allows you to configure a container that will run as an executable
+           DOCKER COMPOSE COMMANDS
+
+> docker-compose up               : Create and start containers.
+> docker-compose down             : Stop and remove containers networks,images,and volumes.
+> docker-compose build            : Build or rebuild services.
+> docker-compose logs             : View output from containers.
+> docker-compose restart          : Restart services.
+
+            DOCKER NETWORKING COMMANDS
+
+> docker network ls                : List networks.
+> docker network create network    : Create a network.
+> docker network rm network        : Remove a network.
+> Bridge                           : Docker's default networking driver.
+> Host                             : For standalone containers, removes network isolation between the container and the Docker host.
+> Overlay                          : Networks connect multiple Docker daemons together and enable swarm services to communicate with each other.
+> Macvlan                          : Assigns a MAC address to a container, making it appear as a physical device on your network
+
+            DOCKER VOLUMES
+
+> docker volume ls                : List volumes.
+> docker volume create volume     : Create a volume.
+> docker volume rm volume         : Remove a volume.
+
+           DOCKER OBJECT COMMANDS
+
+> docker image                    : Manages images.
+> docker container                : Manages containers. 
+> docker network                  : Manages networks.
+> docker volume                   : Manages volumes.
+> docker secret                   : Manages Docker secrets.
+> docker plugin                   : Manages plugins.
+
+         DOCKER ADVANCED COMMANDS
+
+> docker history image            : Show the history of an image.
+> docker save image > file        : Save an image to a tar archive.
+> docker load < file              : Load an image from a tar archive.
+> docker commit container image   : Create a new image from a container's changes.
+
+         DOCKER SYSTEM COMMANDS
+
+> docker info                     : Displays system-wide information.
+> docker version                  : Shows the Docker version information.
+> docker system df                : Shows Docker disk usage.
+> docker system events            : Gets real-time events from the server.
+> docker system prune             : Removes unused data.
+
+         DOCKER SWARM COMMANDS
+
+
+> docker swarm init               : Initialize a swarm.
+> docker swarm join               : Join a node to a swarm.
+> docker node ls                  : List nodes in a swarm.
+> docker service create image     : Create a service.
+> docker service ls               : List services in a swarm.
+> docker service rm service       : Remove a service.
+> docker swarm                    : Manages Swarm.
+> docker node                     : Manages Swarm nodes.
+> docker stack                    : Manages Docker stacks.
+> docker service                  : Manages service.
+
+        
