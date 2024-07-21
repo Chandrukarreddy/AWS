@@ -1,7 +1,7 @@
 Youtube link:-  https://www.youtube.com/watch?v=4cG7dWKbrC8
 
 
-
+target/maven-web-app.war /usr/local/tomcat/webapps/maven-web-app.war
 
 
 pipeline {

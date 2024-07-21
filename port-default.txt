@@ -1,0 +1,6 @@
+
+Tomcat : 8080
+Jenkins: 8080
+Nexus  : 8081
+Sonar  : 9000
+nginx  : 80

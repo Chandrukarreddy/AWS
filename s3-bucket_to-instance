@@ -7,3 +7,4 @@ $  mount-s3 s3-bucket revanth
 aws s3 ls                                ------ to list busket
 aws s3 mb s3://name                      ------ to create bucket
 aws s3 cp filename s3://bucketname       ------ to cp file from server to bucket
+aws s3 ls s3://your-bucket-name/         ------ to list bucket objects
