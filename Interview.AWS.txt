@@ -1,0 +1,72 @@
+1. Explain the steps to set up a secure VPC with subnets and everything.
+
+To set up a secure VPC, follow these steps:
+
+Create a VPC and select the IP range and VPC name.
+Create subnets (public and private) and configure route tables.
+Create an internet gateway and attach it to the VPC.
+Create a NAT gateway or NAT instance for private subnets to access the internet.
+Configure security groups and network ACLs to control traffic flow.
+2. Explain what this IAM policy does.
+
+The IAM policy is a JSON document that defines permissions for users, groups, or roles. It has two statements: one allows listing buckets and items in a specific bucket, and the other allows running tasks on a specific task definition.
+
+3. How do you secure sensitive information such as API keys, passwords, and other credentials in a CI/CD pipeline on AWS?
+
+Use AWS Secrets Manager or Parameter Store to store sensitive information. Use IAM roles to give access to CI/CD services. Rotate secrets regularly, encrypt data using KMS keys, and enable audit access using CloudTrail.
+
+4. Name some AWS services that are not region-specific.
+
+IAM, Amazon Route 53, and AWS CloudFront are global services that are not region-specific.
+
+5. Describe the key differences between Amazon EC2 and AWS Lambda.
+
+EC2 provides virtual servers, while Lambda is a serverless service that runs code without provisioning servers. Use EC2 for long-running tasks or when you need more control over the environment. Use Lambda for event-driven, short-lived tasks with automatic scaling.
+
+6. How do you choose the right database service in AWS for a specific application's requirement?
+
+Choose RDS for relational databases, DynamoDB for NoSQL databases, and Redshift for data warehousing. Consider factors such as data type, scalability, and performance requirements.
+
+7. Explain the concept of Auto Scaling and how it can be implemented in AWS to handle fluctuating workloads.
+
+Auto Scaling automatically adjusts the number of instances in a group based on demand. Implement it using Auto Scaling Groups, which dynamically adjust capacity to maintain performance and reduce costs.
+
+8. Can you vertically scale an Amazon instance? If yes, how?
+
+Yes, you can vertically scale an Amazon instance by stopping the instance, changing the instance type to a larger one (e.g., from t2.medium to t2.large), and then restarting the instance.
+
+9. Can a connection be made between a company's data center and Amazon Cloud? If yes, how?
+
+Yes, a connection can be made using AWS Direct Connect, which provides a dedicated network connection to AWS, or using a VPN (Virtual Private Network) connection over the internet.
+
+10. Describe the key differences between AWS services to manage cost.
+
+Use Cost Explorer to view and manage costs, Budgets to set custom budgets and receive alerts, and Trusted Advisor to receive recommendations on cost optimization. Use Reserved Instances and Savings Plans to save costs on EC2 instances and other services.
+
+11. What is the difference between NAT Gateway and NAT instances? Why do we use them?
+
+NAT Gateway is an AWS-managed service that provides internet access to instances in private subnets, while NAT instances are user-managed EC2 instances that provide similar functionality. Use NAT Gateway for high availability and scalability.
+
+12. How do you allow or restrict access to AWS services?
+
+Use IAM to create users, groups, and roles, and attach policies to define permissions. Use resource policies, network ACLs, security groups, and service control policies to restrict access to AWS services.
+
+13. Describe the advantages and disadvantages of using AWS RDS compared to managing your databases on EC2 instances.
+
+RDS provides managed database services, automated backups, and patching, but has limited control over database configuration. EC2 instances provide more control, but require manual configuration and management.
+
+14. What is the relationship between an instance and an AMI?
+
+An instance is a running virtual machine, while an AMI (Amazon Machine Image) is a template used to create instances. Instances are launched from AMIs, and AMIs can be used to create multiple instances.
+
+15. What are the different ways to access AWS services?
+
+Use the AWS Management Console, AWS CLI, SDKs, or infrastructure as code tools like Terraform to access AWS services.
+
+16. What are the different types of load balancers in AWS, and when to use them?
+
+Use Application Load Balancer for HTTP/HTTPS traffic, Network Load Balancer for TCP/UDP traffic, and Gateway Load Balancer for connecting on-premises data centers to AWS.
+
+17. How do you deploy and manage Docker containers on AWS?
+
+Use Amazon ECS or EKS to deploy and manage Docker containers on AWS. Use ECR to store Docker images.

@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.face {
+    display: flex;
+    justify-content: space-between;
+    width: 300px; /* Adjust size as needed */
+    background-color: #db4646;
+
+}
+
+.eye {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #333;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.eye-ball {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
