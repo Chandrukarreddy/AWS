@@ -7,6 +7,12 @@ git status	                                                      Check status
 git add [file-name]	                                              Add a file to the staging area
 git add -A	                                                      Add all new and changed files to the staging area
 git commit -m "[commit message]"	                              Commit changes
+
+git reset --soft commit.id(n-1)                                       Local to staging area
+git reset head filename                                               Staging to working Directory
+git reset --mixed commit.id(n-1)                                      local repo to working directory 
+git reset --hard commit.id                                            To delete entire commit id
+ 
 git rm -r [file-name.txt]	                                      Remove a file (or folder)
 git branch	                                                      List of branches (the asterisk denotes the current branch)
 git branch -a	                                                      List all branches (local and remote)
