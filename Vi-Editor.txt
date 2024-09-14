@@ -1,0 +1,53 @@
+==========Basic Modes ============================================
+
+i     - insert mode 
+Esc   - command mode 
+
+==========save & exit ===============================================
+
+:wq or ZZ   save and exit
+:w    - save without exit
+:q!   - exit without saving 
+
+==========navigate file ===============================================
+
+arrows 
+move to specific line :line-number
+
+===========Insert and Delete text=====================================
+
+D/ dd - Delete the line 
+u     - undo change
+dw    - delete word 
+x     - delete character 
+I     - Insert at the beginning of Line 
+A     - Append at the end of the line 
+
+===========Copy, Cut & Paste ==========================================
+
+yy    - copy
+dd    - cut
+p     - paste
+P     - paste above cursor 
+
+============search ==================================================
+
+/word - search forward
+?word - search backward 
+n     - Next search match
+N     - Previous search match
+
+=============Visual mode==============================================
+
+Enter visual mode v
+Select line V
+Select Block Ctrl+v
+
+=============Replace words =================================================
+
+:%s/old/new/g
+
+============numbering lines ==============================================
+
+:set number 
+:set nonumber
