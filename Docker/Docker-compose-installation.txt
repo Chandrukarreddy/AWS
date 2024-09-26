@@ -1,0 +1,48 @@
+========================Docker compose installation=========
+
+1.mkdir -p ~/.docker/cli-plugins/
+  curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+
+2. chmod +x ~/.docker/cli-plugins/docker-compose
+
+
+=============================================================
+apt update -y
+apt install git 
+apt install default-jdk -y
+apt install maven -y
+apt install docker.io -y
+========================== Maven commands ====================================
+
+mvn package
+
+====================================================================
+
+git clone https://github.com/Venn1991/mydockerapp.git
+
+vi dockerfile
+
+FROM tomcat:10-jdk17
+COPY ./target/MyWebApp.war /usr/local/tomcat/webapps
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
+
+
+
+========================Docker compose commands =============
+
+docker compose up
+
+docker compose start/down/pause/unpause
+
+docker compose ps
+
+==================================================================
+docker exec -it database-containe mysql -p -----------To enter into database
+Enter password:
+
+show databases
+use database
+show tables
+select * from 
+
